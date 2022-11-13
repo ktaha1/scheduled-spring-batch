@@ -35,7 +35,7 @@ public class CoffeeBatchJob {
     private String filePath;
 
     // JOB
-    @Bean
+    @Bean("coffeeJob")
     public Job job(Step step){
         return jobBuilderFactory.get("coffeeJob")
                 .incrementer(new RunIdIncrementer())
