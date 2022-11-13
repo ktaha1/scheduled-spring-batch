@@ -1,7 +1,7 @@
 DROP TABLE coffee IF EXISTS;
 
-CREATE OR REPLACE TABLE coffee (
-    coffee_id BIGINT IDENTITY NOT NULL PRIMARY KEY,
+CREATE TABLE coffee  (
+    coffee_id INTEGER IDENTITY PRIMARY KEY,
     brand VARCHAR(20),
     origin VARCHAR(20),
     characteristics VARCHAR(30)
